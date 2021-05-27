@@ -11,14 +11,8 @@ public class StatisticsService {
     }
 
     public int averageSales(int[] sales) {
-        int avgSales = 0;
-        int sumAllSales = 0;
-        for (int sale : sales) {
-            sumAllSales += sale;
-            avgSales = sumAllSales(sales) / sales.length;
-        }
+        int avgSales = sumAllSales(sales) / sales.length;
         return avgSales;
-
     }
 
     public int maxSalesAmount(int[] sales) {
